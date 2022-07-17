@@ -7,7 +7,7 @@ const initialState = {
     error: ''
 }
 
-const signInAsync = createAsyncThunk('signin', async ({ email, password, store }) => {
+export const signInAsync = createAsyncThunk('signin', async ({ email, password, store }) => {
 
     try {
         const user = await signin(email, password)
